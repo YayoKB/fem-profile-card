@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+body,
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+  height: 98%;
+  text-align: center;
+  color: var(--very-dark-desaturated-blue);
+  background-color: var(--dark-cyan);
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.wrapper-bgs img {
+  position: absolute;
+}
+
+@media screen and (max-width: calc(50rem - 1px)) {
+  .bg-top {
+    width: 65vh;
+    top: -32vh;
+    left: -60vw;
+  }
+
+  .bg-bottom {
+    height: 100vh;
+    bottom: -55vh;
+    right: -110vw;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .wrapper-bgs img {
+    width: 65vw;
+  }
+
+  .bg-top {
+    top: -32vw;
+    left: -17vw;
+  }
+
+  .bg-bottom {
+    bottom: -85vh;
+    right: -15vw;
+  }
+}
+
+.container {
+  width: 100%;
+  border-radius: 15px;
+  max-width: 20rem;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
+}
+
+.bg {
+  background-image: url("./images/bg-pattern-card.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 8rem;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.avatar {
+  border-radius: 100%;
+}
+
+.avatar-img {
+  border-radius: 100%;
+  border: 5px solid white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0%);
+}
+
+.name {
+  margin-top: 4rem;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.age {
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+.location {
+  font-size: 0.8125rem;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.5rem;
+}
+
+.bottom {
+  border-top: 1px solid lightgray;
+  padding: 1.25rem;
+}
+
+.stats {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.stat {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.stat-text {
+  font-size: 0.5625rem;
+  letter-spacing: 2px;
+  color: var(--dark-grayish-blue);
+}
