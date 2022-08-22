@@ -12,6 +12,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
+- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -47,3 +48,7 @@ I learnt more about background positioning and using negative values.
 
 - GitHub - [YayoKB](https://github.com/YayoKB)
 - Frontend Mentor - [@yYayoKB](https://www.frontendmentor.io/profile/YayoKB)
+
+## Acknowledgements
+
+Big thanks to [vcarames](https://www.frontendmentor.io/profile/vcarames) for providing the solution to my question about the background image placement. I have included his code in my `body` class.

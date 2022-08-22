@@ -14,15 +14,25 @@
   --dark-gray: hsl(0, 0%, 59%);
 }
 
-body,
-html {
+body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.125rem;
-  height: 98%;
   text-align: center;
   color: var(--very-dark-desaturated-blue);
   background-color: var(--dark-cyan);
-  overflow: hidden;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
 }
 
 .wrapper {
@@ -68,9 +78,8 @@ html {
 }
 
 .container {
-  width: 100%;
   border-radius: 15px;
-  max-width: 20rem;
+  width: 20rem;
   background-color: white;
   position: relative;
   box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
